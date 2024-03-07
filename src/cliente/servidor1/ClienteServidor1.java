@@ -1,6 +1,6 @@
 package cliente.servidor1;
 
-import static cliente.servidor1.Usuario.Iniciar_Sesion;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import javax.swing.JOptionPane;
@@ -8,6 +8,52 @@ import javax.swing.JOptionPane;
 public class ClienteServidor1 {
 
     public static void main(String[] args) {
+        
+        Usuario Us = new Usuario();
+        Us.crear_archivo_usuario();
+        InicioS I=new InicioS();
+        I.setVisible(true);
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    }
+    }
+        
+        
+        
+        /*
 
         ArrayList<Usuario> U = new ArrayList<Usuario>();
         //creacion de los 10 usuarios
@@ -107,3 +153,6 @@ public class ClienteServidor1 {
     }
 
 }
+
+*/
+        
