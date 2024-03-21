@@ -4,6 +4,7 @@
  */
 package cliente.servidor1;
 
+import ClienteS.ClienteShilo;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
@@ -20,6 +21,37 @@ public class CuentaC extends javax.swing.JFrame {
      */
     public CuentaC() {
         initComponents();
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
     }
 
     /**
@@ -157,7 +189,11 @@ public class CuentaC extends javax.swing.JFrame {
         //U.Registro(user, contra);
         String user = this.usuario.getText().toLowerCase();
         String contra = this.contra.getText();
-        boolean pasa = false;
+        ClienteShilo CS =new ClienteShilo(user, contra);
+        CS.registro();
+        
+        
+        /*boolean pasa = false;
         boolean pasa2 = false;
         Usuario U = new Usuario();
         ArrayList<Usuario> UN = U.cargarUsuariosDesdeArchivo();
@@ -188,7 +224,8 @@ public class CuentaC extends javax.swing.JFrame {
             UN.add(U);
             U.guardarUsuariosEnArchivo(UN);
             
-        }
+        }*/
+        
 
 
     }//GEN-LAST:event_confirmarActionPerformed

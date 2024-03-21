@@ -71,8 +71,9 @@ public class Usuario implements Comparable<Usuario> {
     return usuarios;
 }
 
-    public void InicioSesion(String contraP, String usuarioP) {
+    public boolean InicioSesion(String contraP, String usuarioP) {
         Usuario U = new Usuario();
+        
         ArrayList<Usuario> UN = U.cargarUsuariosDesdeArchivo();
 
         boolean pasa = false;
@@ -88,9 +89,11 @@ public class Usuario implements Comparable<Usuario> {
         if (!pasa) {
             JOptionPane.showMessageDialog(null, "Usuario o contraseña incorrectos. Por favor ingrese la información correcta");
         }
+        return pasa;
     }
 
-    public void Registro(String user, String contra) {
+    public boolean Registro(String user, String contra) {
+        boolean pasa=false;
         Usuario nuevoUsuario = new Usuario();
         nuevoUsuario.setUsuario(user);
         nuevoUsuario.setContra(contra);
@@ -107,10 +110,12 @@ public class Usuario implements Comparable<Usuario> {
         }
 
         if (!usuarioExistente) {
+            pasa=true;
             Usuarios.add(nuevoUsuario);
             guardarUsuariosEnArchivo(Usuarios);
             JOptionPane.showMessageDialog(null, "El usuario se registró correctamente.");
         }
+        return pasa;
     }
 
     public String getUsuario() {

@@ -4,6 +4,8 @@
  */
 package cliente.servidor1;
 
+import ClienteS.ClienteShilo;
+
 /**
  *
  * @author bille
@@ -157,8 +159,10 @@ public class InicioS extends javax.swing.JFrame {
     private void confirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_confirmarActionPerformed
         String usuario = this.usuario.getText().toLowerCase();
         String contra = this.contra.getText();
-        Usuario U = new Usuario();
-        U.InicioSesion(contra, usuario);
+        //Usuario U = new Usuario();
+        ClienteShilo CS=new ClienteShilo(usuario,contra);
+        CS.IniciodeSesion();
+        //U.InicioSesion(contra, usuario);
 
 
     }//GEN-LAST:event_confirmarActionPerformed
