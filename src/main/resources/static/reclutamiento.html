@@ -3,7 +3,7 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8">
-        <title>KAIROS</title>
+        <title>TechShop</title>
         <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
 
     </head>
@@ -12,7 +12,7 @@
         <header class="header"> 
             <nav class="nav" >
                 <a href="index.html" class="logo nav-link">KAIROS Delta Force</a>
-                <ul class="nav-menu">
+                    <ul class="nav-menu">
                     <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="index.html">Inicio</a></li>
                     <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="Operaciones.html">Operaciones</a></li>
                     <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="Conflicto.html">Conflicto</a></li>
@@ -44,35 +44,43 @@
 
     <section class="section">
         <article>
-            <header>
-                <h2>KRSxclan</h2>
-            </header>
-            <p>Concepto de clan:</p>  
-            <figure>
-                <p>En los videojuegos, un clan es un grupo de jugadores que se unen para jugar juntos de manera organizada y con un objetivo común. Los clanes suelen formarse en juegos multijugador en línea, especialmente en aquellos que requieren cooperación o estrategia, como los shooters, juegos de rol en línea (MMORPGs) y títulos de estrategia.
+            <article>
+    <h2>Cuestionario de Reclutamiento</h2>
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" maxlength="20" placeholder="Ej: Juan Pérez" required>
+        <br>
 
-                    Características principales de un clan:
-                    Identidad y membresía: Los clanes suelen tener un nombre, un emblema y reglas de admisión.
-                    Comunicación y coordinación: Usan chats, foros o plataformas como Discord para organizarse.
-                    Objetivos comunes: Pueden enfocarse en la competencia (eSports), la progresión en el juego o simplemente en la comunidad.
-                    Jerarquía y roles: Algunos clanes tienen líderes y rangos que determinan la autoridad y responsabilidades de los miembros.
-                    Eventos y actividades: Participan en torneos, misiones conjuntas o batallas de clanes dentro del juego.
-                    En resumen, un clan es una comunidad dentro de un videojuego donde los jugadores colaboran y compiten con mayor organización y sentido de pertenencia.</p>
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" placeholder="Ej: usuario@email.com" required>
+        <br>
 
-                <figcaption>Nuestro clan se centra en el juego delta force</figcaption>
-            </figure>
+        <label for="id_jugador">ID de Jugador (solo letras, máx. 20 caracteres):</label>
+        <input type="text" id="id_jugador" name="id_jugador" maxlength="20" pattern="[A-Za-z]+" placeholder="Ej: SuperGamer" required>
+        <br>
+
+        <label for="mmr">MMR (kills por minuto):</label>
+        <select id="mmr" name="mmr" required>
+            <option value="" disabled selected>Selecciona un valor</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <br>
+
+        <button type="submit">Enviar</button>
+    </form>
+</article>
+
 
         </article>
 
         <article>
             <h2>¿Qué ofrecemos?</h2>
             <p>Contamos con jugadores de alto nivel, algunos de ellos en el top 5, como KRSXkhon o KRSxBryan, y varios más en el ranking general. Además, ofrecemos una comunidad sana, diversión y risas. En el futuro, cuando el juego evolucione al nivel competitivo o habiliten las scrims, planeamos comenzar con las prácticas oficiales, así como con la selección del roster para el competitivo.</p>
-        </article>
-        
-        <article>
-            <h2>Donde se ubica nuestra casa gamer?</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.1232159114024!2d-84.09087958810068!3d9.923694990136894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e38a8d5ff4f3%3A0xb600e365c7380132!2sLaticrete!5e0!3m2!1ses!2scr!4v1738375633049!5m2!1ses!2scr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-           
         </article>
     </section>
 
